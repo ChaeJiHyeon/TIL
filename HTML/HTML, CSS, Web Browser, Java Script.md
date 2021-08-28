@@ -5,7 +5,6 @@
 [JavaScript](#JavaScript)<br>
 <br>
 <br>
-------------
 <br>
 <br>
 ## HTML
