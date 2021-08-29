@@ -8,11 +8,13 @@
 <br />
 <h2 id="Expansion">확장 프로그램</h2>
 <p>
-    보통 <b>HTML5</b>를 말한다. <br />
-    처음에는 W3C에서 정한 표준이 있었지만 WHATWG(Google, Apple 등)에서 요청한
-    HTML Living Standards가 HTML5가 되었다.<br />
-    웹 표준이 있기 이전에는 익스플로러 액티브 X같은 독자적인 플러그인이
-    존재했다.
+    <b>Auto rename tag</b><br />
+    앞태그를 고치면 뒤 태그를 바로 고쳐준다.<br /><br />
+    <b>Live Server</b><br />
+    저장하면 바로 수정된 화면이 보여진다.<br />
+    적용안할 경우에는 저장하고 새로고침을 해야지 수정된 화면이 보여진다.<br /><br />
+    <b>Prettier</b><br />
+    들여쓰기 실수를 방지해준다.<br />
 </p>
 
 <br />
