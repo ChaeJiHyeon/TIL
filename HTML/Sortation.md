@@ -49,5 +49,5 @@
         <li>인터랙티브(대화형) 콘텐츠</li><br>
         <p>사용자와 상호작용하는 역할이다.</p><br><br>
     </ul>
-    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram" sizes="100px">
+    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram Sources MDN" sizes="100px">
 </p>
