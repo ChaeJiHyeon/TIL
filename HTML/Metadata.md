@@ -45,16 +45,9 @@
 <br />
 <h2 id="#title">title</h2>
 <p>
-    <ul>
-        <li>메타데이터 콘텐츠</li>
-        <li>플로우 콘텐츠</li>
-        <li>섹션 콘텐츠</li>
-        <li>헤딩 콘텐츠</li>
-        <li>프레이징(구문) 콘텐츠</li>
-        <li>임베디드(내장) 콘텐츠</li>
-        <li>인터랙티브(대화형) 콘텐츠</li>
-    </ul>
-    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram" height="400px" width="400px">
+    탭 제목 부분, head태그 내에 딱 하나 존재한다!<br /><br /><br />
+    잘 작성해야지 검색 엔진이 광고라고 생각하지 않는다.<br /><br />
+    단순한 단어 나열은 광고라고 인식한다.<br /><br />
 </p>
 <br />
 <br />
@@ -62,16 +55,8 @@
 <br />
 <h2 id="#mime">MIME Type</h2>
 <p>
-    <ul>
-        <li>메타데이터 콘텐츠</li>
-        <li>플로우 콘텐츠</li>
-        <li>섹션 콘텐츠</li>
-        <li>헤딩 콘텐츠</li>
-        <li>프레이징(구문) 콘텐츠</li>
-        <li>임베디드(내장) 콘텐츠</li>
-        <li>인터랙티브(대화형) 콘텐츠</li>
-    </ul>
-    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram" height="400px" width="400px">
+    외부 경로를 불러올 때 어떤 파일인지 해석하게 하기 위해 타입을 명시한다.<br /><br />
+    <code>type = text/css</code> 대분류/확장자 순이며 소문자로 명시하는걸 권고한다.<br /><br />
 </p>
 <br />
 <br />
@@ -79,16 +64,8 @@
 <br />
 <h2 id="#st">style</h2>
 <p>
-    <ul>
-        <li>메타데이터 콘텐츠</li>
-        <li>플로우 콘텐츠</li>
-        <li>섹션 콘텐츠</li>
-        <li>헤딩 콘텐츠</li>
-        <li>프레이징(구문) 콘텐츠</li>
-        <li>임베디드(내장) 콘텐츠</li>
-        <li>인터랙티브(대화형) 콘텐츠</li>
-    </ul>
-    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram" height="400px" width="400px">
+    스타일 정보 요소로 css부분 <br /><br />
+    외부에서 링크로 가져오는 걸 권장, 중복될 경우 아래있는 것이 사용됨<br /><br />
 </p>
 <br />
 <br />
@@ -96,14 +73,7 @@
 <br />
 <h2 id="#scr">script</h2>
 <p>
-    <ul>
-        <li>메타데이터 콘텐츠</li>
-        <li>플로우 콘텐츠</li>
-        <li>섹션 콘텐츠</li>
-        <li>헤딩 콘텐츠</li>
-        <li>프레이징(구문) 콘텐츠</li>
-        <li>임베디드(내장) 콘텐츠</li>
-        <li>인터랙티브(대화형) 콘텐츠</li>
-    </ul>
-    <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png?size=webview" alt="contents category Venn diagram" height="400px" width="400px">
+    JavaScript부분을 적음, src 속성으로 경로를 연결할 수 있다. <br />
+    head에도 body에도 둘 다 있어도 된다.<br /><br />
+    script가 나오면 script를 먼저 해석하기 때문에 시간이 걸려서 body의 마지막 부분에 적는걸 추천한다.<br /><br />
 </p>
