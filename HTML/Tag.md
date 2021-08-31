@@ -34,10 +34,14 @@
     여백을 위해 사용하면 안된다. 스타일은 css:margin으로 한다.<br /><br />
 </p>
 &nbsp; &nbsp; &nbsp; &nbsp;
-<h2 id="#st">style</h2>
+<h2 id="#Quote">인용</h2>
 <p>
-    스타일 정보 요소로 css부분 <br /><br />
-    외부에서 링크로 가져오는 걸 권장, 중복될 경우 아래있는 것이 사용됨<br /><br />
+    <code>&lt;blockquote&gt;</code> 또는 <code>&lt;q&gt;</code>
+    <b
+        >blackquote는 인용블록 요소로 들여쓰기가 있고, 블록요소이기에 p태그 내에
+        쓸 수 없다.</b
+    ><br /><br />
+    여백을 위해 사용하면 안된다. 스타일은 css:margin으로 한다.<br /><br />
 </p>
 &nbsp; &nbsp; &nbsp; &nbsp;
 <h2 id="#scr">script</h2>
