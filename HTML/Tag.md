@@ -36,18 +36,17 @@
 &nbsp; &nbsp; &nbsp; &nbsp;
 <h2 id="#Quote">인용</h2>
 <p>
-    <code>&lt;blockquote&gt;</code> 또는 <code>&lt;q&gt;</code>
-    <b
-        >blackquote는 인용블록 요소로 들여쓰기가 있고, 블록요소이기에 p태그 내에
-        쓸 수 없다.</b
-    ><br /><br />
-    여백을 위해 사용하면 안된다. 스타일은 css:margin으로 한다.<br /><br />
+    <code>&lt;blockquote&gt;</code> 또는 <code>&lt;q&gt;</code
+    ><br /><br /><br />
+    <b><code>blackquote</code>는 인용블록 요소이다.</b><br /><br />
+    들여쓰기가 있고, 블록요소이기에 p태그 내에 쓸 수 없다.<br /><br /><br />
+    <b><code>q</code>는 인라인 인용 요소이다.</b><br /><br />
+    쌍 따옴표가 생기고, 인라인이기에 개행이 되지 않는다.<br /><br />
+    둘 다 여백을 위해 사용하면 안된다. cite 속성 : 출처 URL을 적는다.<br /><br />
 </p>
 &nbsp; &nbsp; &nbsp; &nbsp;
-<h2 id="#scr">script</h2>
+<h2 id="#Abbreviations">약어</h2>
 <p>
-    JavaScript부분을 적음, src 속성으로 경로를 연결할 수 있다. <br />
-    head에도 body에도 둘 다 있어도 된다.<br /><br />
-    script가 나오면 script를 먼저 해석하기 때문에 시간이 걸려서 body의 마지막
-    부분에 적는걸 추천한다.<br /><br />
+    <code>&lt;abbr&gt;</code> 를 쓰며 abbreviation의 약자이다.<br /><br />
+    title속성을 사용해서 약어를 설명한다. 툴 팁으로 나온다.<br /><br />
 </p>
