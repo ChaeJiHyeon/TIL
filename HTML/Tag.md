@@ -9,6 +9,8 @@
     <li><a href="#preformatted">pre</a></li>
     <li><a href="#figure">figure</a></li>
     <li><a href="#hr">가로줄</a></li>
+    <li><a href="#add">주소</a></li>
+    <li><a href="#bdo">반대로</a></li>
 </ul>
 &nbsp; &nbsp; &nbsp; &nbsp;
 <h2 id="heading">&lt;h1&gt;~&lt;h6&gt;</h2>
@@ -76,4 +78,13 @@
 <p>
     <code>&lt;cite&gt;</code> 인용의 출처를 적는다.<br /><br />
     인용요소와 함께 속성으로 쓸 수 있지만 출처 표기시에 따로 적는다.<br /><br />
+</p>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<h2 id="add">주소</h2>
+<p><code>&lt;address&gt;</code> <br /><br /></p>
+&nbsp; &nbsp; &nbsp; &nbsp;
+<h2 id="bdo">반대로</h2>
+<p>
+    <code>&lt;bdo&gt;</code> bidirectional override.<br /><br />
+    속성 dir:rtl(default값, right to left)/ltr(left to right)<br /><br />
 </p>
