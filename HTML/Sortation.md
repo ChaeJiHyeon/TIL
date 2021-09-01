@@ -37,13 +37,15 @@
         <li>메타데이터 콘텐츠</li><br>
         <p>문서 정보나 다른 문서를 링크하는 역할, head태그 안에 있는 내용이 주로 들어간다.</p><br><br>
         <li>플로우 콘텐츠</li><br>
-        <p>메타데이터의 일부만 제외하고 다 들어간다. body태그 안에 있는 내용이 주로 들어간다.</p><br><br>
-        <li>섹션 콘텐츠</li><br>
-        <p>구획을 나눌 때 사용한다.</p><br><br>
-        <li>헤딩 콘텐츠</li><br>
-        <p>섹션의 제목이다.</p><br><br>
+        <p>메타데이터의 일부만 제외하고 다 들어간다. body태그 안에 있는 텍스트나 내장 콘텐츠가 주로 들어간다.</p><br><br>
+        <li>섹션 콘텐츠 / 구획 콘텐츠</li><br>
+        <p>구획을 나눌 때 사용한다. <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>의 범위를 정의하는 구역을 생성한다.<code>&lt;header&gt;</code><br><br>
+            <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>
+        </p><br><br>
+        <li>헤딩 콘텐츠 / 제목 콘텐츠</li><br>
+        <p>구획의 제목이다.</p><br><br>
         <li>프레이징(구문) 콘텐츠</li><br>
-        <p>텍스트 마크업의 역할이다.</p><br><br>
+        <p>텍스트와 텍스트 마크업의 역할이다.</p><br><br>
         <li>임베디드(내장) 콘텐츠</li><br>
         <p>외부 소스(이미지, 비디오)를 가져오거나 삽입할 때 사용한다.</p><br><br>
         <li>인터랙티브(대화형) 콘텐츠</li><br>
