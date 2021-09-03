@@ -54,12 +54,15 @@
             <li>placeholder</li>
         </ul>
     </li>
+    <li>
+        <a href="#Optgroup">optgroup</a>
+    </li>
 </ol>
 <br />
 <br />
 <br />
 <br />
-<h2 id="#Label">label</h2>
+<h2 id="Label">label</h2>
 <p>
     form의 자식요소(input과 select)의 제목<br>
 </p>
@@ -98,7 +101,7 @@
 <br />
 <br />
 <br />
-<h2 id="#Input">input</h2>
+<h2 id="Input">input</h2>
 <p>
     label과 함께 적는다, 적으면 접근성에 좋다.<br>
     div로 묶어주면 div가 블록요소여서 알아서 개행이 된다.<br>
@@ -172,7 +175,7 @@
 <br />
 <br />
 <br />
-<h2 id="#Fieldset">fieldset</h2>
+<h2 id="Fieldset">fieldset</h2>
 <p>설문조사 폼에 input이 많은 경우<br>
     개인정보, 부가정보, 주소연락처를 넣는 회원가입폼<br>
     그룹으로 나눠서 시맨틱적 측면을 챙기고 싶다면 fieldset사용<br>
@@ -183,7 +186,7 @@
 <br />
 <br />
 <br />
-<h2 id="#Button">button</h2>
+<h2 id="Button">button</h2>
 <p>
     <ul>
         <li>type</li>
@@ -197,12 +200,47 @@
 <br />
 <br />
 <br />
-<h2 id="#Iframe">iframe</h2>
-<p>다른 HTML페이지를 삽입할 때 사용한다.</p>
+<h2 id="Select">select</h2>
 <p>
-    <ul>
-        <li>height, width</li>
-        <li>src</li>
-        <p>경로 지정</p>
-    </ul>
+    드롭다운, <code>&lt;option&gt;</code>를 자식요소로 사용한다. 첫번째 값으로 적은 것이 기본으로 뜨며,<br>
+    <code>option</code>의 value속성이 존재하지 않는 경우, 내용을 value로 사용하여 넣지않을 경우에는 <code>value=&quot;&quot;</code>로 적어야한다.<br>
+    <code>selected</code>속성으로 기본을 설정할 수 있다.(불린값)
 </p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2 id="Optgroup">optgroup</h2>
+<p>
+    option을 그룹으로 묶어준다.
+</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2 id="Datalist">datalist</h2>
+<p>
+    input의 <code>list=&quot;datalist의 id값&quot;</code>과 함께 사용한다.<br>
+    <code>&lt;option&gt;</code>를 자식요소로 사용한다. <br>
+    추천 목록들을 보여주고 수정이 가능하다, 마치 검색창처럼1
+</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2 id="Textarea">datalist</h2>
+<p>
+    여러줄의 텍스트를 입력할 수 있으며 label을 달아줄 수 있다.
+</p>
+<ul>
+    <li>rows, cols</li>
+    <li>disable</li>
+    <li>required</li>
+    <li>placeholder</li>
+</ul>
