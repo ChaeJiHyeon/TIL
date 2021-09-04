@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 표를 만들기 위한 table태그 -->
+        <table>
+            <!-- table의 제목 -->
+            <caption>
+                주식회사 HTML 매출
+            </caption>
+            <!-- 테이블의 정보, 분류 -->
+            <thead>
+                <!-- rowspan과 colspan을 이용해 가로 세로 합침 -->
+                <tr>
+                    <th rowspan="2">/</th>
+                    <th colspan="2">반기</th>
+                    <th rowspan="2">합계</th>
+                    <th rowspan="2">비고</th>
+                </tr>
+                <tr>
+                    <th>전반기</th>
+                    <th>후반기</th>
+                </tr>
+            </thead>
+            <!-- 표의 값, body -->
+            <tbody>
+                <tr>
+                    <th>2019</th>
+                    <td>10억</td>
+                    <td>20억</td>
+                    <td>30억</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>2020</th>
+                    <td>22억</td>
+                    <td>33억</td>
+                    <td>55억</td>
+                    <td rowspan="2">1)</td>
+                </tr>
+                <!-- 여기는 tbody인가 tfoot인가..? -->
+                <tr>
+                    <th>2021</th>
+                    <td colspan="2">집계중</td>
+                    <td>집계중</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <img src="test4.jpg" alt="주식회사 HTML 매출표 결과창" />
+    </body>
+</html>
