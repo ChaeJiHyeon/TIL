@@ -17,4 +17,5 @@ for i in range(1, length+1):
 
 # 여기서 set의 순서를 바꿔서 생각해버려서 계속 다른 값이 나왔다.
 # 좀 더 잘 생각해 볼 것!
-print(list(set(b)-set(a)))
+# 결과값이 정렬된 형태로 나오지않아 sorted를 사용했다.
+print(sorted(list(set(b)-set(a))))
