@@ -1,0 +1,222 @@
+CSS 개요
+Cascading Style Sheets
+W3C에서 권고한 CSS3가 표준
+위에서 아래로 흐른다. 여러 스타일이 하나의 요소에 적용될 때 어떤 스타일을 적용할지
+위에서 부터 정의한 스타일이 아래에서도 적용된다.
+동일한 스타일이여도 선언된 곳에 따라 우선순위가 정해진다.
+
+브라우저 스타일<개발자 스타일<사용자가 구성한 스타일
+명시도 - 적용범위가 적을 수록 우선시
+유지보수할 때 직접 태그를 찾아야 해서 어려워진다.
+
+inherited<*<tag(type)<class/attribute/pseudo class<id<인라인<!important
+코드 위치 - 소스코드의 순서가 뒤에 있으면 뒤에 있는게 적용된다.
+
+스타일 상속
+- 부모 요소에 있는 스타일 속성들이 자식 요소로 전달한다.
+- 상속이 되지 않는 요소 -> 배경 이미지나 배경 색
+
+CSS는 룰기반의 언어이다.
+태그를 해석하면서 스타일링 법칙을 적용
+여러 규칙을 나열
+룰 -> Selector(html요소를 선택){
+	선언블럭(declarations선언부, 하나 이상의 선언)
+	-> 속성(property): 값(value);
+}
+h1{
+	color: red;
+	font-size: 5em;
+}
+
+주석
+/* */
+
+
+CSS적용하는 방법
+1. 내부스타일 (embedded)
+2. 인라인스타일(inline)
+3. 외부스타일(external)
+
+1. head태그 내에 style태그를 넣어준다.
+<style>
+	h1{
+
+	}
+</style>
+
+2. 하나의 요소에만 넣고 싶을 때 사용 but 지양, style 속성 사용, 두개 이상일시 세미콜론 적용
+<h1 style="color:red">Welcome!</h1>
+
+3. head태그 내 link태그로 연결, 권고함
+<link rel="stylesheet" href="style/main.css" />
+relationship이 파일과 외부파일의 관계, href 경로
+
+text color css mdn이렇게 들어가면 컬러의 값을 어떻게 적을 수 있는지 등 확인가능
+브라우저 지원범위 꼭 살필것.
+
+can i use
+
+
+
+
+CSS Selector
+
+선택자
+- Type
+태그 이름을  셀렉터로 하는 경우. 하나의 html에 있는 태그를 일관적으로 스타일링함.
+보기 좋게 상단부에 적음.
+h2{
+	color: purple;
+}
+- Class
+전역속성 중 class를 추가해서 이름표를 달아줌, 이름표가 두개일 수도 있다.
+중복이 가능하다.
+마지막에 작성된 코드를 따라간다.
+.blue{
+	color: blue;
+}
+- ID
+전역속성중 id를 추가해서 이름표를 달아줌
+유일하고 유니크해야함, 중복 없음
+#id-name {
+	color: red;
+}
+
+
+- Attribute Selector
+1. [attr]
+a[target]{
+	color: hotpink;
+}
+2. [attr=value]
+a[href="http://example.org"]{
+	color: indigo;
+}
+input[type="submit"]{
+	background-color:green;
+}
+3. [attr^=value]
+a[href^="http://"]{
+	color:red;
+}
+~로 시작하는 애들
+4. [attr$=value]
+a[href$=".com"]
+~로 끝나는 애들
+5. [attr*=value]
+a[href*="example"]{
+	color:sienna;
+}
+example을 값의 부분으로 가지는 애들 
+
+
+Pseudo-Class Selector(가상 클래스 선택자)
+1. first-child /first-type
+li:first-child{
+	color:green;
+}
+형제중에서 첫번째 자식요소
+.movie:first-child{
+	font-size:42px
+}
+선택한 클래스의 부모요소의 첫번째 자식요소
+p:first-of-type{
+	..
+}
+type들 중 첫번째
+
+2. last-child / last-of-type
+span:last-child{
+	color:tomato;
+}
+
+3. nth-child() / nth-of-type()
+li:nth-chlid(2){
+	color:hotpink;
+}
+형제중에서 지정한 순서의 자식요소
+li:nth-chlid(2n){
+	..
+}
+odd,even함수를 사용해서 지정가능
+
+4. not(selector)
+p:not(.pw){
+	background-color:indianred;
+}
+
+5. link, visited
+a{ ... }하면 방문했던 안했던 둘다 지정됨
+a:link{ ... }하면 방문을 하지 않은 경우 지정
+a:visited{ ... }하면 방문하면 지정
+
+6. hover, active, focus(lvha순서로 link visited hover active)
+input[type=button]:hover{...} 마우스를 올리면 어디에 올린지 확인이 가능
+input[type=button]:active{...} 마우스가 눌리게 될 경우 적용되는 스타일
+input[type=button]:focus{...} tab키로 포커싱됐을 때, 입력을 위해 클릭했을 때
+
+ 7. enabled, disabled, checked
+input[type=text]:enabled{...}
+input[type=text]:disabled{...}
+input[type=radio]:checked{...}
+input[type=checkbox]:checked{...}
+
+
+Pseudo-Class Selector(가상 요소 선택자)
+selector::____
+1. before, after
+.movie::before {
+	content: 'OH YEAH';
+	color:indianred;
+}
+html에 존재하진 않지만 css에 만들어낸 가상의 요소, 복사도 안되는
+스타일적인 요소
+뱃지나 구분점이나 구분바같은걸 넣을 때 사용
+
+2. first-letter, first-line, selection
+.lorem::first-letter{...} 각 문장의 첫번째 문자에만 보여짐
+.lorem::first-line{...} 각 문장의 첫 줄, 각 페이지의 크기에 맞춘 맨 첫줄
+.lorem::selection{...} 선택영역에 맞게, 드래그 하는 경우.
+
+
+Selector Combinatiors(선택자 결합)
+1. 하위 선택자
+ul li:last-of-type{...} ul태그의 하위에 있는 list태그의 마지막.
+
+2. 자식 선택자
+#list > li:last-of-type{...} 바로 하위 태그중 마지막.
+
+3. 형제 선택자
+3-1. 일반 형제 선택자 결합(~)
+code ~ selector{...} 같은 부모를 가진 요소 중에서 선택, 선행관계가 확실해야 함
+3-2. 인접 형제 선택자 결합(+)
+code + selector{...}  선행관계 + 붙어있어야함.
+
+4. 그룹화(,)
+p, span{...}
+
+5. 범용 선택자(Universal Selector)
+*{...} 모든 요소가 선택됨
+*.red{...} 클래스도 원래 이렇게 작성이 되어있다. 생략이 가능하다.
+p + *{...} p태그 뒤 다 포함된다.
+
+
+
+상속제어하기
+1. initial
+.child2{
+	color:initial;
+}
+부모를 상속받지 않고 원래대로 돌려줌
+all:initial;을 하면 모든 property를 상속받지 않는다.
+
+2. inherit
+.parent2*{
+	color:inherit;
+}
+위에서 정의한거 다 무시하고 부모의 property를 받는다.
+
+3. unset
+3-1 부모로부터 상속받을 값이 있을 때 inherit처럼
+3-2 부모로부터 상속받을 값이 없을 때 initial처럼
+all:unset
