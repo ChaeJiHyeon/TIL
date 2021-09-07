@@ -1,0 +1,70 @@
+1. font-size: 12px;(브라우저는 16px를 기본으로 설정되어있다./%)
+
+2. font-style:italic;/oblique;/normal;(필수)
+
+3. font-weight:normal;(=400)/bold(=700);/lighter
+
+4. font-family: 글꼴, 글꼴;(첫번째폰트사용->사용자 컴퓨터에 존재x, 두번째폰트사용)
+serif/san-serif(필수)
+font 이름에 스페이싱이 있는 경우는 ''로 감싸준다.
+
+5. line-height
+폰트사이즈 위아래로 여백을 주는 것
+normal/2.5/3em/150%/32px
+폰트에 따라 글꼴의 높이가 달라지기 때문에 조절하는게 좋다.
+
+6. font-variant
+
+.text{
+	font:italic 100 20px/1.7 ''Times New Roman, Times, serif;(마지막에 적으면 initial값으로 가기 때문에 따로 지정하면 font속성 아래로 둬야함)
+}
+(font-style, font-weight, font-size/line-height, font-family순)
+.text{
+	font-size:20px;
+	font-family:''Times New Roman, Times, serif;
+}
+
+
+7. letter-spacing
+글짜간의 간격 5px/-3px/rem/em
+normal(글꼴에 따라 다름)
+
+8. word-spacing
+단어사이의 간격 10px/-10px
+normal(글꼴에 따라 다름)
+100%(default)
+
+9. text-align
+right/left/center
+적용하는 요소가 블럭요소여야함.
+블럭요소 구분하는거 backgroundcolor로 구분
+인라인 요소를 가운데로 옮기고 싶은경우에는 div로 묶어주고 적용.
+
+10. text-indent
+상속됨 20px/50%
+문단앞에 여백이 생김
+블럭요소에 적용됨
+
+11. text-decoration
+순서는 중요하지 않다.
+11-1. text-decoration-line(필수) -어떤 데코를 할거야?
+none(default)/underline/overline/line-through(취소선)
+스페이싱으로 여러개 사용가능
+
+11-2. text-decoration-color
+
+11-3. text-decoration-style
+solid(default)/double/dotted/dashed/wavy
+
+11-4. text-decoration-thickness
+2px
+
+12. word-break
+normal/break-all(한중일텍스트 제외, 가로값을 넘는 경우 개행해줌)/keep-all(한중일텍스트만, 스페이싱있는 부분이 줄바꿈이 되고 글이 가로값을 넘는다.)
+
+13. text-transform
+한글에는 적용이 안되는 속성
+capitalize(단어의 앞글자가 대문자로 변경)
+none
+uppercase(대문자로 변경)
+lowercase(소문자로 변경)
