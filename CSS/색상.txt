@@ -1,0 +1,55 @@
+color
+- 키워드(transparent:투명, blue 등)
+- RGB(#16진수 표기법(HEX Color,#000000검,#FFFFFF흰) /rgb(255,255,255)흰/rgba()->alpha값으로 투명도 조절 1이 제일 진함
+- HSL 실린더형 좌표계
+
+
+opacity 내부의 요소의 불투명도
+0
+1(기본값)
+배경만 조절하고 싶을 땐 background-color를 이용해서 rgba를 사용하면 된다.
+1. background-color
+
+2. background-image
+배경에 이미지파일을 넣는다, img가 color보다 가깝게 뜬다, z값이 더 높다.
+url("")
+
+3. background-repeat
+바둑판 형식
+repeat-x x축으로 반복,
+repeat-y y축으로 반복
+repeat 반복(기본값)
+no-repeat 반복x
+space
+round
+space repeat
+
+4. background-position
+x축 y축
+왼쪽 위의 꼭짓점이 시작점이다.
+키워드 작성시 순서가 상관 없다. top center left bottom right
+
+5. background-origin
+margin은 안된다.
+content-box 콘텐츠 박스의 상단부터
+padding-box 패딩 박스의 상단부터
+border-box 보더 박스의 상단부터
+
+6. background-size
+auto(기본값)
+contain 작은쪽에 비율을 맞춘다. 콘텐츠
+cover 이미지가 찌그러지지않는 만큼 빈공간이 없게 
+<length> 하나만 적으면 비율이 유지된다.
+<percentage> 100%가로에 맞춘다.
+
+7. background
+background-attachment scroll이 기본값
+background-clip border-box가 기본값
+background-color 마지막에 적는다, transparent가 기본값
+background-image none이 기본값
+background-origin padding-box가 기본값
+background-position 0% 0%가 기본값
+background-repeat repeat이 기본값
+background-size auto auto가 기본값
+원하는 속성값만 사용해도 된다.
+포지션뒤에 사이즈 /로 구분
