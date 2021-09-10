@@ -1,0 +1,39 @@
+
+.box:hover{바꿀 내용}
+transition
+
+A->B상태로 전환된다. 시간이 걸린다. 그래서 시간관련된 내용이 있다.
+Fade in on hover
+마우스를 올리면 색이 변하는것?
+올리고 내릴때 적용하고 싶다면 hover안에 넣으면 안된다.
+*다 따로따로 움직이게 무지갯빛으로 보여지도록 해보기!
+
+1. transition-delay
+<time> ms/s
+딜레이 후 바뀐다.
+
+2. transition-duration
+얼마만큼의 시간을 가지고 바꿀것인가
+<time> ms/s
+1s = 1000ms
+
+3. transition-property
+none, all, margin-right, color, background-color
+시간이 적용되는 부분.
+
+4. transition-timing-function
+ease(기본값, 천천히-빠르게)/ease-in(천천히-빠른)/ease-out(천천히)/ease-in-out(천천히-빠른-천천히)/linear(일정한 속도)/cubic-
+
+5. transition
+transition-delay:0s
+transition-duration:0s
+transition-property:all
+transition-timing-function:ease
+- 하나
+property duration
+-둘
+property duration delay
+- 셋
+property duration timing_function delay
+-두개의 property
+property duration,property duration

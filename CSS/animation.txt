@@ -1,0 +1,76 @@
+animation
+스페이싱으로 작성
+다수의 스타일 전환을 자동으로 전환
+
+단축속성(:기본값)
+animation-name :none
+animation-duration: 0s
+animation-timing-function: ease
+animation-delay :0s
+animation-iteration-count: 1
+animation-direction :normal
+animation-fill-mode :none
+animation-play-state :running
+
+
+@keyframes
+keyframes를 작성해서 사용
+두개 작성
+animation:이름 1s(몇초에 걸쳐서 재생?) infinite(영원히);
+@keyframes 이름{
+	from{
+		...(ex) width:100px;)
+	}
+	to{
+		...(ex)width: 3000px;)
+	}
+}
+두개 이상이면  from to 대신 %로 적어도 된다.
+
+
+1. animation-name
+none/keyframes 이름
+영어,숫자,_,- 만 사용
+
+2.animation-duration
+<time> s/ms
+음수가 유효하지 않는다.
+한 사이클을 완료하는데 걸리는 시간
+
+3. animation-delay
+<time> s/ms
+음수값 즉시 시작, 애니메이션의 주기 도중 시작
+양수값 지정된 시간이 경과 후 시작
+
+4. animation-timing-function
+linear/ease(기본값)/ease-in/ease-out/ease-in-out/linear/step-start/step-end
+
+5. animation-iteration-count
+반복횟수, 1(기본값)
+<number> / infinite
+
+6. animation-direction
+방향
+normal(순서대로)/reverse(반대로)/alternate(앞뒤앞뒤)/alternate-reverse(뒤앞)
+
+7. animation-play-states
+running(기본값)
+paused
+hover을 사용해서 마우스를 올리면 애니메이션이 일시정지하는 것처럼 할수있다.
+
+8. animation-fill-mode
+none()/
+forwards(keyframes의 100%에서 끝)/
+backwords(시작을 keyframes0%에서 시작)/
+both(forwards와 backwords둘다 적용)
+
+9. animation(shorthand)
+animation-name :none
+animation-duration: 0s
+animation-timing-function: ease
+animation-delay :0s
+animation-iteration-count: 1
+animation-direction :normal
+animation-fill-mode :none
+animation-play-state :running
+순서 상관없음 앞쪽숫자 duration 뒤 delay
