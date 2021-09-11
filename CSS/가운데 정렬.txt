@@ -1,0 +1,15 @@
+가운데 정렬
+
+justify-content:center -> 가로
+align-items:center -> 세로
+
+값 : center/left/right/justif
+
+Alpotato.html, style.css에 코드 작성
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+text-align:center는 블록 크기의 가운데
