@@ -1,0 +1,31 @@
+/* 인라인 요소로 바꾸어 가로 정렬 */
+nav{
+    /* nav padding 좌우 16px */
+    padding: 0px 16px;
+    /* nav 높이 64px 
+    line-height는 keyword/<number>/<length>/<percentage> */
+    line-height: 64px;
+    /* 하단 border크기 1px (231,231,231) */
+    border-bottom:1px solid rgb(231, 231, 231);
+}
+/* 제목 폰트 24px bold */
+h1{
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* float:right를 통해 제목과 함께 오른쪽으로 정렬
+float: none/left/right/inline-start/inline-end */
+#menu{
+    float:right;
+    margin: 0px;
+}
+/* 메뉴 아이템 좌우 margin 10px */
+.menu_item{
+    display: inline;
+    margin:0px 10px;
+}
+/* font-style, font-variant, font-weight가 font-size보다 먼저 있어야한다.
+font-variant는 normal과 small-caps만 사용 가능
+font-size/line-height
+font-family마지막*/
