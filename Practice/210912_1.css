@@ -1,0 +1,10 @@
+/* margin은 상우하좌 순서로 지정
+BoxModel : content padding border margine
+border-color를 지정하기 위해서는 style을 먼저 지정해야한다.content */
+.content{
+    margin: 10px 15px 20px 15px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
