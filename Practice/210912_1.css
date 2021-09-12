@@ -1,14 +1,15 @@
 /* margin은 상우하좌 순서로 지정
 BoxModel : content padding border margin
-border-color를 지정하기 위해서는 style을 먼저 지정해야한다
-.을 사용하여 class를 지정
-border none과 hidden의 차이는 none을 하면 border이 아예 사라지고 hidden은 보이지 않을 뿐 1px등의 너비는 존재한다
-border-style:solid/none/hidden/dotted/dashed/double/groove/ridge/inset/outset
-스페이싱으로 여러개 사용 가능, 시계방향 순으로 지정됨.*/
+.을 사용하여 class를 지정*/
 .content{
     margin: 10px 15px 20px 15px;
     width: 100px;
     height: 100px;
     padding: 10px;
+    /* border-color:<color> ->지정 전에 border-style을 지정
+    border-style:solid/none/hidden/dotted/dashed/double/groove/ridge/inset/outset
+                    스페이싱으로 여러개 사용 가능, 시계방향 순으로 지정됨.
+                    none과 hidden 둘 다 보이지 않는다. 다만, hidden은 숨겨질 뿐이라 너비를 지정하면 여백이 생긴다.
+                    border-collapse:collapsed인 경우에는 inset과 outset이 지정이 안된다.*/
     border: 1px solid black;
 }
