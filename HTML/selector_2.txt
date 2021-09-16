@@ -1,0 +1,122 @@
+Type 선택자
+- h1{...}
+
+범용 선택자
+- *{...}
+
+class 선택자
+- .class_name{...}
+
+id선택자
+- #id_name{...}
+
+
+
+
+
+
+
+속성 선택자
+- element[attribute]{...}
+	->element(요소)의 attribute(속성)을 가진 경우
+- element[attribute="value"]{...}
+	->element(요소)의 attribute(속성)의 value(값)을 가진 경우
+- element[attribute*="value"]{...}
+	->element(요소)의 attribute(속성)의 value(값)이 값에 포함된 경우
+- element[attribute$="value"]{...}
+	->element(요소)의 attribute(속성)의 value(값)이 값의 마지막에 있는 경우
+- element[attribute^="value"]{...]
+	->element(요소)의 attribute(속성)의 value(값)이 맨 처음에 있는 경우 가진 경우
+
+
+
+
+
+
+
+
+
+Pseudo-class 선택자
+
+- :first-child
+	->형제 요소 중 제일 첫번째
+- :default
+	-> 기본값인 요소
+
+-----------enabled----------
+- :disabled
+	->비활성화된 요소
+- :enabled
+	->활성화된 요소
+- :checked
+	-> 체크된 요소
+	-> input라디오,체크박스,option요소
+ <input type="radio" name="season" id="summer" checked>
+ <label for="summer">Summer</label>
+<style>
+input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+</style>
+
+------------blank-----------
+- :blank
+	-> 빈공간
+<textarea></textarea>
+<style>textarea:blank{...}</style>
+
+-----------nth---------------
+- :nth-child()
+	-> 1부터 시작
+	-> 형제 사이의 순서에 따라, 4n같은 식도 적용 가능
+	-> odd 홀수 even 짝수
+
+-----LVHA순서로 디자인------
+- :link
+	->아직 방문하지 않은 요소
+- :visited
+	-> 방문한 요소
+- :hover 
+	->마우스가 요소 위에 올라간 경우
+- :active
+	-> 활성화한 요소, 마우스 버튼을 누르는 순간부터 떼는 시점까지
+	-> 주 버튼에만 적용되어야함, 맨 왼쪽 버튼
+
+----------focus-------------
+- :focus
+	-> 사용자가 요소를 클릭 또는 탭하여 선택하는 경우
+- :focus-within
+	-> 자손이 포커스를 받았을 때의 요소
+
+
+
+
+
+
+
+Pseudo-element 선택자
+- ::after
+	-> 선택한 요소의 마지막 자식으로 콘텐츠를 추가, inline
+	-> content:"이렇게!" 속성과 함께 사용됨
+	-> img나 br은 사용할 수 없다.
+	-> :hover나 :focus와 함께 사용해서 툴팁(content:attr())을 추가할 수 있다.
+- ::before
+	->선택한 요소의 앞에 콘텐츠를 추가, inline속성
+- ::placeholder
+	-> <input>/<textarea>의 힌트를 바꿈
+
+
+
+
+
+하위 결합자
+- article p{...}
+
+자식 결합자
+- article>p{...}
+
+인접 형제 결합자
+- h1+p{....}
+
+일반 형제 결합자
+- h1~p{...}
