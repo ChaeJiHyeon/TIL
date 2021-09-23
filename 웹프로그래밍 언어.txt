@@ -1,0 +1,52 @@
+웹프로그래밍 언어
+1. 저급언어
+- 기계 중심의 언어
+
+- 전기신호인  on  과  off 2가지 상태 값으로 동작한다
+
+- 숫자로만 되어있기 때문에 유지 보수가 어렵다
+
+- 기호로 작성된 프로그램은 기계가 알아들을 수 없기에 원래 숫자로 바꿔주는 도구를 컴파일러(Compiler)라고 하며,
+이 언어를 어셈블리어(Assembly Language)라고 한다.
+
+
+
+
+2. 고급언어
+- 사람 중심의 언어
+
+- 작성된 소스코드를 번역하는 과정을 컴파일한다. 라고 하며 수행하는 것이 컴파일러이다.
+
+FORTRAN(포트란) :  과학계산용
+COBOL(코볼) : 일반업무
+PROLOG : 논리형 프로그래밍 언어
+C : 시스템 프로그래밍
+Erlang : 함수형 병행성 프로그래밍 언어, 통신 인프라
+Lisp(리스프) : LISt Processor의 약자, 함수형 언어
+Swift : WWDC(WorldWide Developers Conference), 모던 프로그래밍 언어
+Kotlin(코틀린) : JVM기반의 언어, 모던 프로그래밍 언어
+Clojure(클로저) : 리스프 프로그래밍 언어의 방언, 범용 함수형 언어
+Python : ML, 데이터 과학, 웹사이트 개발
+JAVA : 객체 지향 프로그래밍 언어
+
+
+웹 관련 인기 언어 : python, php, javascript, java, ruby
+
+
+
+
++ 언어
+3. 객체 지향 언어
+현실 세계의 현상을 컴퓨터 상에 객체로 모델화
+- 절차적 언어에 비해 유지보수성(Maintainability)과 재사용성(Reusability)이 좋다
+- C++, Java, Ada, Smalltalk 등
+- Object(Data속성/Method연산)/Class(설계도)/Message(상호작용의 수단)
+- 캡슐화(Encapsulation), 추상화(Abstraction), 상속(Inheritance), 다형성(Polimorphism)
+
+컴파일러 : 번역, 재사용이 가능, 중간 결과물만드는 역할
+어셈블러 : 한줄씩 읽어들여서 실행, 중간결과물에서 기계어 코드를 만드는 역할
+인터프리어 : 통역, 매번 사용시 변환, 기계어를 현재 시스템에서 돌아갈 수 있도록 함.
+
+티오베, github의 언어순위
+
+
